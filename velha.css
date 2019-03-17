@@ -1,0 +1,13 @@
+.casa{
+    width:200px;
+    height:100%;
+    background: #99ccff;
+    font-size: 80px;
+    color: #ff0000;
+    cursor: pointer;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    float:left;
+    border-right:solid 1px;
+}
