@@ -11,3 +11,14 @@
     float:left;
     border-right:solid 1px;
 }
+
+#jogo{
+    width:603px;
+    height:600px;
+    border:solid 3px
+}
+
+.linha{
+    height:200px;
+    border-bottom:solid 1px;
+}

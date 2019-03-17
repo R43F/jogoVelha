@@ -36,23 +36,19 @@ function verifica(){
        ((c3 != '') && (b3 != '') && (c3 != '') && (a3 == b3) && (b3 == c3)) ||
        ((a1 != '') && (b2 != '') && (c3 != '') && (a1 == b2) && (b2 == c3)) ||
        ((a3 != '') && (b2 != '') && (c1 != '') && (a3 == b2) && (b2 == c1))){
-        alert("Você é o campeão")
-        novo_jogo()
+        alert("Você é o campeão");
+        novo_jogo();
     }
 
     
 }
 
 function novo_jogo(){
-    valor = ["a", "b", "c"]
+    valor = ["a", "b", "c"];
     for(i=0; i<3; i++){
         for(j=1; j<4; j++){
-            nome = valor[i] + j
-            document.getElementById(nome).innerHTML = ''
+            nome = valor[i] + j;
+            document.getElementById(nome).innerHTML = '';
         }        
     }
-}
-
-function teste(){
-    alert("teste");
 }
