@@ -27,6 +27,7 @@ function verifica(){
     c1 = document.getElementById('c1').innerHTML;
     c2 = document.getElementById('c2').innerHTML;
     c3 = document.getElementById('c3').innerHTML;
+    ret = true
 
     if(((a1 != '') && (a2 != '') && (a3 != '') && (a1 == a2) && (a2 == a3)) ||
        ((b1 != '') && (b2 != '') && (b3 != '') && (b1 == b2) && (b2 == b3)) ||
@@ -39,9 +40,62 @@ function verifica(){
         alert("Você é o campeão");
         novo_jogo();
     }
-
-    
+    else if((a1 != '') && (a2 != '') && (a3 != '') &&
+            (b1 != '') && (b2 != '') && (b3 != '') &&
+            (c1 != '') && (c2 != '') && (c3 != '')){
+        alert('Deu Velha');
+        novo_jogo()
+    }
 }
+
+function verifica2(){
+    a1 = document.getElementById('a1').innerHTML;
+    a2 = document.getElementById('a2').innerHTML;
+    a3 = document.getElementById('a3').innerHTML;
+    b1 = document.getElementById('b1').innerHTML;
+    b2 = document.getElementById('b2').innerHTML;
+    b3 = document.getElementById('b3').innerHTML;
+    c1 = document.getElementById('c1').innerHTML;
+    c2 = document.getElementById('c2').innerHTML;
+    c3 = document.getElementById('c3').innerHTML;
+
+    if((a1 != '') && (a2 != '') && (a3 != '') && (a1 == a2) && (a2 == a3)){
+        window.onload = document.getElementById('a1').style.color = 'blue';
+        window.onload = document.getElementById('a1').style.backgroundColor = 'pink';
+        alert("Você é o campeão");
+    }
+    else if((b1 != '') && (b2 != '') && (b3 != '') && (b1 == b2) && (b2 == b3)){
+        window.onload = document.getElementById('a1').style.color = 'blue';
+        window.onload = document.getElementById('a1').style.backgroundColor = 'pink';
+        alert("Você é o campeão");
+    }
+    else if((c1 != '') && (c2 != '') && (c3 != '') && (c1 == c2) && (c2 == c3)){
+        window.onload = document.getElementById('a1').style.color = 'blue';
+        window.onload = document.getElementById('a1').style.backgroundColor = 'pink';
+        alert("Você é o campeão");
+       }
+    else if((a1 != '') && (b1 != '') && (c1 != '') && (a1 == b1) && (b1 == c1)){
+        window.onload = document.getElementById('a1').style.color = 'blue';
+        window.onload = document.getElementById('a1').style.backgroundColor = 'pink';
+        alert("Você é o campeão");
+       }
+    else if((a2 != '') && (b2 != '') && (c2 != '') && (a2 == b2) && (b2 == c2)){
+        window.onload = document.getElementById('a1').style.color = 'blue';
+        window.onload = document.getElementById('a1').style.backgroundColor = 'pink';
+        alert("Você é o campeão");
+    }
+    else if((c3 != '') && (b3 != '') && (c3 != '') && (a3 == b3) && (b3 == c3)){
+        window.onload = document.getElementById('a1').style.color = 'blue';
+        window.onload = document.getElementById('a1').style.backgroundColor = 'pink';
+        alert("Você é o campeão");
+    }
+    else if((a1 != '') && (b2 != '') && (c3 != '') && (a1 == b2) && (b2 == c3)){
+        window.onload = document.getElementById('a1').style.color = 'blue';
+        window.onload = document.getElementById('a1').style.backgroundColor = 'pink';
+        alert("Você é o campeão");
+    }
+}
+
 
 function novo_jogo(){
     valor = ["a", "b", "c"];
