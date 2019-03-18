@@ -1,13 +1,24 @@
-.casa{
-    width:200px;
-    height:100%;
-    background: #99ccff;
+.casa {
+    width: 200px;
+    height: 20%;
     font-size: 80px;
-    color: #ff0000;
+    color: #FDFFFC;
     cursor: pointer;
     align-items: center;
     vertical-align: middle;
     text-align: center;
-    float:left;
-    border-right:solid 1px;
+    float: left;
+    border: solid 1px #f0eaea;
+    top: 50px;
+}
+#botao {
+    width: 20% !important;
+    background-color: #F71735;
+    margin: 30px;
+    color: #FDFFFC;
+    border: #F71735;
+    margin-left: 20%; 
+}
+body{
+    background-color: #09090c !important;
 }

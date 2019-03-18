@@ -10,48 +10,41 @@
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-          <div id="jogo">
-              <div class="linha">
-                  <div class="casa" align="center" valign="middle" id="a1" onclick="joga(this.id);verifica();"></div>
-                  <div class="casa" align="center" valign="middle" id="a2" onclick="joga(this.id);verifica();"></div>
-                  <div class="casa" align="center" valign="middle" id="a3" onclick="joga(this.id);verifica();"></div>
-              </div>
-              <div class="linha">
-                  <div class="casa" align="center" valign="middle" id="b1" onclick="joga(this.id);verifica();"></div>
-                  <div class="casa" align="center" valign="middle" id="b2" onclick="joga(this.id);verifica();"></div>
-                  <div class="casa" align="center" valign="middle" id="b3" onclick="joga(this.id);verifica();"></div>
-              </div>
-              <div class="linha">
-                  <div class="casa" align="center" valign="middle" id="c1" onclick="joga(this.id);verifica();"></div>
-                  <div class="casa" align="center" valign="middle" id="c2" onclick="joga(this.id);verifica();"></div>
-                  <div class="casa" align="center" valign="middle" id="c3" onclick="joga(this.id);verifica();"></div>
-              </div>
-          </div>
-          <div id="resultado"></div>
-          <input id="botao" type="button" name="limpar" value="Novo jogo" onclick="novo_jogo();"></button>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <div class="container">
+        <div class="row">
+            <div class="titulo" align="center">
+                <h1>JOGO DA VELHA</h1>
+            </div>
+        </div>
+    </div>
+    <div id="jogo" class="box">
+        <div class="container">
+            <div class="row">
+                    <div class="casa" align="center" valign="middle" id="a1" onclick="joga(this.id);verifica();"></div>
+                    <div class="casa" align="center" valign="middle" id="a2" onclick="joga(this.id);verifica();"></div>
+                    <div class="casa" align="center" valign="middle" id="a3" onclick="joga(this.id);verifica();"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                    <div class="casa" align="center" valign="middle" id="b1" onclick="joga(this.id);verifica();"></div>
+                    <div class="casa" align="center" valign="middle" id="b2" onclick="joga(this.id);verifica();"></div>
+                    <div class="casa" align="center" valign="middle" id="b3" onclick="joga(this.id);verifica();"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                    <div class="casa" align="center" valign="middle" id="c1" onclick="joga(this.id);verifica();"></div>
+                    <div class="casa" align="center" valign="middle" id="c2" onclick="joga(this.id);verifica();"></div>
+                    <div class="casa" align="center" valign="middle" id="c3" onclick="joga(this.id);verifica();"></div>
+            </div>
+        </div>
+    </div>
+    <div id="resultado">
+        <input id="botao" class="form-control" type="button" name="limpar" value="Novo jogo" onclick="novo_jogo();"></button>
+    </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
-  <style>
-  #jogo{
-    width:603px;
-    height:600px;
-    border:solid 3px
-}
- 
-.linha{
-    height:200px;
-    border-bottom:solid 1px;
-}
- 
-/* .casa{
-    width:200px;
-    height:100%;
-    border-right:solid 1px;
-    float:left;
-} */
-
-
-Read more: http://www.linhadecodigo.com.br/artigo/3506/criando-um-jogo-da-velha-em-javascript-html-e-css.aspx#ixzz5iSXbb4eT</style>
 </html>
