@@ -7,21 +7,19 @@
     align-items: center;
     vertical-align: middle;
     text-align: center;
-}
-.linha{
     float: left;
     border: solid 1px #f0eaea;
     top: 50px;
     padding: 3%;
-}
-#botao {
+    }
+    #botao {
     width: 20% !important;
     background-color: #F71735;
     margin: 30px;
     color: #FDFFFC;
     border: #F71735;
     margin-left: 20%; 
-}
-body{
+    }
+    body{
     background-color: #09090c !important;
-}
+    }
