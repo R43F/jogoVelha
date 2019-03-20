@@ -27,19 +27,20 @@
     color: #F71735;
 }
 
-body{
-    background-color: #09090c !important;
-}
 #aluno{
     color: #f0eaea;
     margin: 30px;
 }
 
-.input{
+.entrada{
     margin: 10px;
 }
 
 .label{
     color: #f0eaea;
     margin-left: 5%;
+}
+
+body{
+    background-color: #09090c !important;
 }
