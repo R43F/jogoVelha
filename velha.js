@@ -2,19 +2,34 @@
 
 jogador = "X";
 
+if(document.getElementById('x') != null && document.getElementById('o') != null){
+    x = document.getElementById('x').value;
+    o = document.getElementById('o').value;
+    atua = x;
+}
+
+
 function joga(celula){
-    click = document.getElementById(celula).innerHTML;
+    if(document.getElementById('x').value == "" || document.getElementById('o').value == ""){
+        alert("Preenha os campos com os nomes dos jogadores");
+    }else{
+
+        click = document.getElementById(celula).innerHTML;
     if (click == "X" || click == "O"){
         alert("Casa utilizada!");
-    }else{
+    }
+    else{
         document.getElementById(celula).innerHTML = jogador;
         if(jogador ==  "X"){
             jogador = "O";
+            atual = x;
         }else{
             jogador = "X";
+            atual = o;
+            }       
         }
-        
     }
+    
 }
 
 function verifica(){
@@ -37,14 +52,16 @@ function verifica(){
        ((c3 != '') && (b3 != '') && (c3 != '') && (a3 == b3) && (b3 == c3)) ||
        ((a1 != '') && (b2 != '') && (c3 != '') && (a1 == b2) && (b2 == c3)) ||
        ((a3 != '') && (b2 != '') && (c1 != '') && (a3 == b2) && (b2 == c1))){
-        alert("Você é o campeão");
+        
+        alert(atual.value + " é o campeão");
         novo_jogo();
     }
     else if((a1 != '') && (a2 != '') && (a3 != '') &&
             (b1 != '') && (b2 != '') && (b3 != '') &&
             (c1 != '') && (c2 != '') && (c3 != '')){
-        alert('Deu Velha');
-        novo_jogo()
+        
+        setTimeout(alert('Deu Velha'), 2000);
+        setTimeout(novo_jogo(), 2000);
     }
 }
 
@@ -56,4 +73,10 @@ function novo_jogo(){
             document.getElementById(nome).innerHTML = '';
         }        
     }
+    jogador = "X"
+    atual = x
 }
+function delay(ms) {
+    ms += new Date().getTime();
+    while (new Date() < ms){}
+ }
